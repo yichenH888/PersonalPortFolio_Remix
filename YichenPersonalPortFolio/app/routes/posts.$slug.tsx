@@ -6,6 +6,10 @@ import invariant from "tiny-invariant";
 
 import { getPost } from "~/models/post.server";
 
+type LoaderData = {
+    html: string;
+    title: string;
+}
 export const loader = async ({ params }: LoaderArgs) => {
   invariant(params.slug, "params.slug is required");
 
@@ -13,7 +17,7 @@ export const loader = async ({ params }: LoaderArgs) => {
   invariant(post, `Post not found: ${params.slug}`);
 
   const html = marked(post.markdown);
-  return json({ html, title:post.title });
+  return json<LoaderData>({ html, title:post.title });
 };
 
 export default function PostSlug() {
