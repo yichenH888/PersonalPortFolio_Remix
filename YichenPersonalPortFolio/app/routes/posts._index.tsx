@@ -5,8 +5,9 @@ import type { LoaderFunction } from "@remix-run/node";
 
 type LoaderData = {
   posts: Awaited<ReturnType<typeof getPostListings>>;
-}
-export const loader: LoaderFunction = async () => { //only runs on server
+};
+export const loader: LoaderFunction = async () => {
+  //only runs on server
   return json<LoaderData>({ posts: await getPostListings() });
 };
 
