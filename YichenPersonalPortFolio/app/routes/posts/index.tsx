@@ -1,13 +1,13 @@
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import { getPosts } from "~/models/post.server";
+import { getPostListings, getPosts } from "~/models/post.server";
 import type { LoaderFunction } from "@remix-run/node";
 
 type LoaderData = {
-  posts: Awaited<ReturnType<typeof getPosts>>;
+  posts: Awaited<ReturnType<typeof getPostListings>>;
 }
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({ posts: await getPosts() });
+export const loader: LoaderFunction = async () => { //only runs on server
+  return json<LoaderData>({ posts: await getPostListings() });
 };
 
 export default function Posts() {
