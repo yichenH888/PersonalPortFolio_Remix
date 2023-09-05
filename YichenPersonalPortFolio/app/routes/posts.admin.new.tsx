@@ -3,6 +3,7 @@ import { json, redirect } from "@remix-run/node";
 import { Form, useActionData } from "@remix-run/react";
 
 import { createPost } from "~/models/post.server";
+import invariant from "tiny-invariant";
 
 export const action = async ({ request }: ActionArgs) => {
   const formData = await request.formData();
@@ -22,6 +23,17 @@ export const action = async ({ request }: ActionArgs) => {
   if (hasErrors) {
     return json(errors);
   }
+
+  await createPost({ title, slug, markdown });
+
+  return redirect("/posts/admin");
+};
+
+export const action = async ({ request }: ActionArgs) => {
+  // ...
+  invariant(typeof title === "string", "title must be a string");
+  invariant(typeof slug === "string", "slug must be a string");
+  invariant(typeof markdown === "string", "markdown must be a string");
 
   await createPost({ title, slug, markdown });
 
