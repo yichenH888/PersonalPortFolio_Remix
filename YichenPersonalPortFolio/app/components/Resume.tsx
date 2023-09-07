@@ -48,24 +48,38 @@ export const Resume = () => {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
+            <h5 className="text-xl md:text-2xl  font-bold">MEng |</h5>
             <h5 className="text-xl md:text-2xl  font-bold">
-              B.S. Computer Science
+              Electrical and Computer Engineering
             </h5>
-            <h6 className="text-lg font-bold">Harward University</h6>
-            <p>Jan 2015 - present</p>
+            <h5 className="text-xl md:text-2xl  font-bold">
+              (Track: Software Development)
+            </h5>
+            <h6 className="text-lg font-bold">Duke University</h6>
+            <p>Aug 2022 - present</p>
           </div>
           <div className="flex flex-col col-span-4 ">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
-            </p>
+            <p>• Fundamental Computer System & Engineering</p>
+            <p>• Programming, Data Structures & Algorithms in C++</p>
+            <p>• Advanced Topics in ECE: Algorithms</p>
+            <p>• Engineering Robust Server</p>
+            <p>• Advanced Topics in ECE: More Reliable Software</p>
+            <p>• System Program & Engineering</p>
+            <p>• Software Quality Management</p>
+            <p>• Business Fundamentals for Engineers</p>
+            <p>• Management of High Tech Industries</p>
           </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-6 my-10">
+          <div className="flex flex-col col-span-2 mb-4 md:mb-0">
+            <h5 className="text-xl md:text-2xl  font-bold">B.E |</h5>
+            <h5 className="text-xl md:text-2xl  font-bold">
+              Electrical and Electronic Engineering
+            </h5>
+            <h6 className="text-lg font-bold">University of Nottingham</h6>
+            <p>Sep 2018 - Jun 2022</p>
+          </div>
+          <div className="flex flex-col col-span-4 "></div>
         </div>
       </section>
       <hr className="border-gray-400 mx-44" />
@@ -75,23 +89,27 @@ export const Resume = () => {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-            <h5 className="text-xl md:text-2xl  font-bold">
-              B.S. Computer Science
-            </h5>
-            <h6 className="text-lg font-bold">Harward University</h6>
-            <p>Jan 2015 - present</p>
+            <h6 className="text-lg font-bold">Programming Languages:</h6>
+            <h6 className="text-lg font-bold">Frameworks:</h6>
+            <h6 className="text-lg font-bold">Database and ORM:</h6>
+            <h6 className="text-lg font-bold">Testing Tools:</h6>
+            <h6 className="text-lg font-bold">Other Tools:</h6>
           </div>
           <div className="flex flex-col col-span-4 ">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
-            </p>
+            <h6 className="text-lg">JavaScript, TypeScript, Python, Java, C/C++, SQL, HTML/CSS</h6>
+            <h6 className="text-lg">
+              Node.js, Spring Boot, Spring Cloud, Angular, React.js, Django,
+              Bootstrap
+            </h6>
+            <h6 className="text-lg">PostgreSQL, MySQL, Redis, Hibernate, Sequelize</h6>
+            <h6 className="text-lg">
+              Selenium, Jasmine, Mocha, React DevTools, React Profiler, Junit
+              and Mockito, Postmanr
+            </h6>
+            <h6 className="text-lg">
+              Git, AWS EC2, Docker, CI/CD, Elasticsearch, Sentinel, Geohash,
+              Multithreading
+            </h6>
           </div>
         </div>
       </section>
