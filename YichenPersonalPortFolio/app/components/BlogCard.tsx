@@ -1,4 +1,4 @@
-export const Blogcard = () => {
+export const Blogcard = ({title}) => {
   return (
     <div>
       <article
@@ -13,7 +13,7 @@ export const Blogcard = () => {
           <h3 className="text-center">
             <a className="text-white text-2xl font-bold text-center" href="#">
               <span className="absolute inset-0" />
-              Top 10 highest paid programming languages of 2021
+              {title}
             </a>
           </h3>
         </div>
