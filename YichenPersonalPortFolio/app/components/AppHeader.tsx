@@ -1,8 +1,11 @@
 export const AppHeader = () =>{
   return (
     <header>
-      <nav className="flex dark:bg-slate-900 items-center relative justify-between bg-white px-5 py-6 w-full">
-        <div>
+      <nav
+        className="flex dark:bg-slate-900 items-center relative justify-between bg-white px-5 py-6 w-full"
+        style={{ backgroundColor: "#f5f5f5" }}
+      >
+        <div style={{ visibility: "hidden", pointerEvents: "none" }}>
           <svg
             width={41}
             height={39}
@@ -64,22 +67,22 @@ export const AppHeader = () =>{
             </svg>
           </div>
           <li className="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary">
-            <a href="#" className="dark:text-white">
+            <a href="/" className="dark:text-white">
               About
             </a>
           </li>
           <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-            <a href="#" className="dark:text-white">
+            <a href="/resume" className="dark:text-white">
               Resume
             </a>
           </li>
           <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-            <a href="#" className="dark:text-white">
+            <a href="/posts" className="dark:text-white">
               Blog
             </a>
           </li>
           <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-            <a href="#" className="dark:text-white">
+            <a href="/contact" className="dark:text-white">
               Contact
             </a>
           </li>

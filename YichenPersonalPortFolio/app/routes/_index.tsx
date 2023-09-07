@@ -3,15 +3,18 @@ import { Link } from "@remix-run/react";
 
 import { useOptionalUser } from "~/utils";
 import { Avatar_AboutPage } from "~/components/Avatar_AboutPage"; 
-
+import {Text_AboutPage} from "~/components/Text_AboutPage";
 export const meta: V2_MetaFunction = () => [{ title: "Remix Notes" }];
 
 export default function Index() {
   const user = useOptionalUser();
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div style={{ marginRight: "400px" }}>
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <div>
         <Avatar_AboutPage />
+      </div>
+      <div className="mt-5 md:mt-0 mx-8" style={{ marginTop: "50px" }}>
+        <Text_AboutPage />
       </div>
     </div>
 

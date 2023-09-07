@@ -4,7 +4,7 @@ export const Avatar_AboutPage = () => {
       <div>
         <img
           className="w-64 h-64 rounded-full"
-          src="/images/assets/IDPhoto.jpg"
+          src="/images/assets/IDPhoto.png"
           alt="Rounded avatar"
         />
       </div>
