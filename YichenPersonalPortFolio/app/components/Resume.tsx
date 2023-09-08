@@ -96,12 +96,16 @@ export const Resume = () => {
             <h6 className="text-lg font-bold">Other Tools:</h6>
           </div>
           <div className="flex flex-col col-span-4 ">
-            <h6 className="text-lg">JavaScript, TypeScript, Python, Java, C/C++, SQL, HTML/CSS</h6>
+            <h6 className="text-lg">
+              JavaScript, TypeScript, Python, Java, C/C++, SQL, HTML/CSS
+            </h6>
             <h6 className="text-lg">
               Node.js, Spring Boot, Spring Cloud, Angular, React.js, Django,
               Bootstrap
             </h6>
-            <h6 className="text-lg">PostgreSQL, MySQL, Redis, Hibernate, Sequelize</h6>
+            <h6 className="text-lg">
+              PostgreSQL, MySQL, Redis, Hibernate, Sequelize
+            </h6>
             <h6 className="text-lg">
               Selenium, Jasmine, Mocha, React DevTools, React Profiler, Junit
               and Mockito, Postmanr
@@ -121,21 +125,30 @@ export const Resume = () => {
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
             <h5 className="text-xl md:text-2xl font-bold">
-              Full Stack Developer
+              Software Engineer Intern
             </h5>
-            <h6 className="text-lg font-bold">Facebook</h6>
-            <p>Jan 2015 - present</p>
+            <h6 className="text-lg font-bold">ScriptChain Health</h6>
+            <p>May 2023 - Aug 2023</p>
           </div>
           <div className="flex flex-col col-span-4">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
+              • Developed a web app featuring a "Provider Portal" enabling
+              primary care physicians to access patient heart disease data and
+              AI-driven predictions for enhanced diagnostic decision-making.
+              Additionally, integrated a "Patient Portal" for seamless data
+              sharing with patients.
+            </p>
+            <p>
+              • Designed dynamic and multi-browser compatible pages using
+              Angular (HTML, CSS and TypeScript); Created reusable components
+              such as reusable headers, navigation bar and footers to increase
+              maintainability and efficiency.
+            </p>
+            <p>
+              • Built patient record management RESTful APIs with Node.js
+              (JavaScript), served user requests with microservices, allowing
+              users to efficiently manage patient data and send text/email
+              reminders via frontend.
             </p>
           </div>
         </div>
