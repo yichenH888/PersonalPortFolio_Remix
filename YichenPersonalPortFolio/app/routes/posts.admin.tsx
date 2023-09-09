@@ -1,9 +1,12 @@
-import { json } from "@remix-run/node";
+import { json, LoaderArgs, redirect } from "@remix-run/node";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
 
 import { getPosts } from "~/models/post.server";
+import { getUserId } from "~/session.server";
 
-export const loader = async () => {
+export const loader = async ({ request }: LoaderArgs) => {
+  const userId = await getUserId(request);
+  if (userId != "clmcht3zh00002zyyo26i07d8") return redirect("/login");
   return json({ posts: await getPosts() });
 };
 
