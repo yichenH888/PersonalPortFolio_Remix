@@ -9,10 +9,8 @@ export const AppHeader = ({isLoggedin}) => {
 
   // Function to toggle the dropdown's visibility
   const toggle_dropdown = () => {
-    console.log(isDropdownOpen);
     setDropdownOpen(!isDropdownOpen); // Toggle the state
   }
-console.log('111',{isLoggedin});
   return (
     <header>
       <nav

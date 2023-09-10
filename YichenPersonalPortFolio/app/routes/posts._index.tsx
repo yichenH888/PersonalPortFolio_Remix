@@ -11,7 +11,6 @@ type LoaderData = {
 export const loader: LoaderFunction = async ({ request }: LoaderArgs) => {
   //only runs on server
   const userId = await getUserId(request);
-  console.log(userId);
   return json<LoaderData>({
     posts: await getPostListings(),
     isLoggedin: userId == "clmcht3zh00002zyyo26i07d8" ? true : false,

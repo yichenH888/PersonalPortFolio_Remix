@@ -26,7 +26,6 @@ export const links: LinksFunction = () => [
 
 export const loader = async ({ request }: LoaderArgs) => {
     const userId = await getUserId(request);
-    console.log(userId);
   return json<LoaderData>({
     isLoggedin: userId ? true : false,
   });

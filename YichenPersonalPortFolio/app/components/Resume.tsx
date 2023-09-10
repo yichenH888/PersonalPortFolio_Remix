@@ -154,6 +154,24 @@ export const Resume = () => {
               users to efficiently manage patient data and send text/email
               reminders via frontend.
             </p>
+            <p>
+              • Processing CRUD operation with Sequelize ORM; successfully
+              migrated data from MySQL to Redis, resulting in considerable
+              improvements in response time.
+            </p>
+            <p>
+              • Migrated search service from MySQL to Elasticsearch,
+              significantly improved patients' records searching speed by 50%
+              compared with fuzzy matching.
+            </p>
+            <p>
+              • Designed and managed CI/CD pipelines, deployed to AWS EC2 with
+              multiple nodes.
+            </p>
+            <p>
+              • Conducted integration testing with Selenium on frontend and
+              Postman for API; employed Jasmine for unit testing.
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
@@ -161,38 +179,13 @@ export const Resume = () => {
             <h5 className="text-xl md:text-2xl  font-bold">
               Software Developer
             </h5>
-            <h6 className="text-lg font-bold">Google</h6>
-            <p>Feb 2010 - Jan 2015</p>
+            <h6 className="text-lg font-bold">Duke University</h6>
+            <p>May 2023 - Aug 2023</p>
           </div>
           <div className="flex flex-col col-span-4">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 my-10">
-          <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-            <h5 className="text-xl md:text-2xl  font-bold">Web Developer</h5>
-            <h6 className="text-lg font-bold">IBM</h6>
-            <p>Apr 2008 - Feb 2010</p>
-          </div>
-          <div className="flex flex-col col-span-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
+              • Created a Python auto-grader to assess classifier performance in
+              a machine-learning course by analyzing curves.
             </p>
           </div>
         </div>
@@ -206,61 +199,97 @@ export const Resume = () => {
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
             <h5 className="text-xl md:text-2xl font-bold">
-              Full Stack Developer
+              Mini Amazon System
             </h5>
-            <h6 className="text-lg font-bold">Facebook</h6>
-            <p>Jan 2015 - present</p>
+            <p>Apr 2023 - May 2023</p>
           </div>
           <div className="flex flex-col col-span-4">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
+              • Developed a full-stack web application modeling an Amazon system
+              with a warehouse and delivery system.
+            </p>
+            <p>
+              • Implemented the web frontend using React (JavaScript) and
+              rendered user-friendly UI with CSS, HTML, and Bootstrap,
+              implemented unit test with Mocha framework to enhance code quality
+              of Components.
+            </p>
+            <p>
+              • Utilized React development tools like React DevTools and React
+              Profiler, proficient in using these tools for debugging,
+              performance optimization, and gaining insights into component
+              behavior.
+            </p>
+            <p>
+              • Established communication model with Java, communicated with UPS
+              delivery service and warehouse with Google Protocol Buffer and
+              stored data in PostgreSQL with help of Hibernate ORM.
+            </p>
+            <p>
+              • Designed a set of RESTful APIs with Springboot, integrated
+              Springboot with communication model; wrote testable and secure
+              applications, kept 80% code coverage with unit test via Junit and
+              Mockito.
+            </p>
+            <p>
+              • Deployed Spring Cloud Consul, set up Consul Clusters nodes to
+              support service discovery and server register between different
+              server modules.
+            </p>
+            <p>
+              • Deployed to AWS EC2 with multiple nodes, integrated orderService
+              with Consul, and make the app highly available for public access.
+            </p>
+            <p>
+              • Used GitHub and Maven for version control and project dependency
+              control, resolved git conflict during collaborative code reviews.
+            </p>
+            <p>
+              • Set up flow control with Sentinel to protect backend system from
+              overload traffic.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
             <h5 className="text-xl md:text-2xl  font-bold">
-              Software Developer
+              Ride Sharing Service Web-APP
             </h5>
-            <h6 className="text-lg font-bold">Google</h6>
-            <p>Feb 2010 - Jan 2015</p>
+            <p>Jan 2023 - Feb 2023</p>
           </div>
           <div className="flex flex-col col-span-4">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
+              • Built a full-stack web application modeling an Uber-like system
+              using Django and PostgreSQL.
+            </p>
+            <p>
+              • Created a matched service model to facilitate rider-customer
+              pairing, by identifying the nearest available rider using Geohash.
+            </p>
+            <p>
+              • Implemented user authentication and order status management.
+            </p>
+            <p>
+              • Deployed the application to multiple nodes using Docker and AWS
+              ECS.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 my-10">
           <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-            <h5 className="text-xl md:text-2xl  font-bold">Web Developer</h5>
-            <h6 className="text-lg font-bold">IBM</h6>
-            <p>Apr 2008 - Feb 2010</p>
+            <h5 className="text-xl md:text-2xl  font-bold">
+              Mini Multithread Stock Exchange Matching Engine
+            </h5>
+            <p>Mar 2023 - Apr 2023</p>
           </div>
           <div className="flex flex-col col-span-4">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              eveniet deleniti tempore veritatis adipisci accusantium
-              voluptatibus vel aperiam ex alias officiis deserunt, ad, iste id
-              cum minus sit laudantium ullam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Animi non incidunt voluptates
-              molestiae delectus nulla quisquam aperiam voluptas tempora
-              distinctio! Ipsa cupiditate harum voluptates praesentium. Suscipit
-              itaque officiis odio ut!
+              • Created a C++ server to match orders and track accounts for a
+              simulated stock/commodities market.
+            </p>
+            <p>
+              • Stored data with PostgreSQL (SQL), considered database
+              concurrency by implementing multithreading.
             </p>
           </div>
         </div>
