@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Form} from "@remix-run/react";
 
 export const AppHeader = () => {
 
@@ -146,7 +147,13 @@ export const AppHeader = () => {
                       />
                     </svg>
                   </span>
-                  <span> Logout </span>
+                  <Form action="/logout" method="post">
+                    <button
+                      type="submit"
+                    >
+                      <span>Logout</span>
+                    </button>
+                  </Form>
                 </li>
               </ul>
             </div>
