@@ -21,3 +21,9 @@ export async function getPost(slug: string) {
 export async function createPost(post: Pick<Post, "slug" | "title" | "markdown">) {
   return prisma.post.create({ data: post });
 }
+
+export function deletePost(slug: string) {
+  return prisma.post.deleteMany({
+    where: { slug },
+  });
+}
