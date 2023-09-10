@@ -22,7 +22,7 @@ export const loader: LoaderFunction = async ({ request }: LoaderArgs) => {
 export default function Posts() {
   const { posts, isLoggedin } = useLoaderData<typeof loader>() as LoaderData;
   return (
-    <main>
+    <main style={{ minHeight: "80vh" }}>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
         <article>
           <section className="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
@@ -39,12 +39,19 @@ export default function Posts() {
         </article>
       </section>
 
-      <Link
-        to="admin"
-        className={`text-red-600 underline ${isLoggedin ? "" : "hidden"}`}
+      {/* component */}
+      <div
+        className={`flex justify-center items-center ${
+          isLoggedin ? "" : "hidden"
+        }`}
       >
-        Admin
-      </Link>
+        <button className="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+          <div className="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full" />
+          <span className="relative text-black group-hover:text-white">
+            <Link to="admin">Update Blog</Link>
+          </span>
+        </button>
+      </div>
     </main>
   );
 }

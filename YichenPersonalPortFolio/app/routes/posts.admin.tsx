@@ -13,7 +13,7 @@ export const loader = async ({ request }: LoaderArgs) => {
 export default function PostAdmin() {
   const { posts } = useLoaderData<typeof loader>();
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-4xl" style={{ minHeight: "80vh" }}>
       <h1 className="my-6 mb-2 border-b-2 text-center text-3xl">Blog Admin</h1>
       <div className="grid grid-cols-4 gap-6">
         <nav className="col-span-4 md:col-span-1">

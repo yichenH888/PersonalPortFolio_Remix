@@ -78,28 +78,23 @@ export const AppHeader = ({isLoggedin}) => {
               />
             </svg>
           </div>
-          <li className="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary">
+          <li className="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary ml-6">
             <a href="/" className="dark:text-white">
               About
             </a>
           </li>
-          <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
+          <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors ml-6">
             <a href="/resume" className="dark:text-white">
               Resume
             </a>
           </li>
-          <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
+          <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors ml-6">
             <a href="/posts" className="dark:text-white">
               Blog
             </a>
           </li>
-          <li className="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-            <a href="/contact" className="dark:text-white">
-              Contact
-            </a>
-          </li>
         </ul>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center mr-4">
           <li
             className={`font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary ${
               isLoggedin ? "hidden" : ""
@@ -127,7 +122,7 @@ export const AppHeader = ({isLoggedin}) => {
               src="/images/assets/Avatar.png"
             ></img>
             <div
-              className={`drop-down w-48 overflow-hidden bg-white rounded-md shadow absolute top-12 right-3 ${
+              className={`drop-down w-48 overflow-hidden bg-white rounded-md shadow absolute top-19 right-3 ${
                 isDropdownOpen ? "" : "hidden"
               }`}
             >
