@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Form} from "@remix-run/react";
 
-export const AppHeader = () => {
+export const AppHeader = ({isLoggedin}) => {
 
     
       // Initialize a state variable to keep track of the dropdown's visibility
@@ -12,7 +12,7 @@ export const AppHeader = () => {
     console.log(isDropdownOpen);
     setDropdownOpen(!isDropdownOpen); // Toggle the state
   }
-
+console.log('111',{isLoggedin});
   return (
     <header>
       <nav
@@ -103,7 +103,9 @@ export const AppHeader = () => {
         </ul>
         <div className="flex gap-3 items-center">
           <li
-            className="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary"
+            className={`font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary ${
+              isLoggedin ? "hidden" : ""
+            }`}
             style={{ listStyle: "none" }}
           >
             <a href="/login" className="dark:text-white">
@@ -111,14 +113,16 @@ export const AppHeader = () => {
             </a>
           </li>
           <li
-            className="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary"
+            className={`font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary ${
+              isLoggedin ? "hidden" : ""
+            }`}
             style={{ listStyle: "none" }}
           >
             <a href="/join" className="dark:text-white">
               Signup
             </a>
           </li>
-          <div>
+          <div className={`${isLoggedin ? "" : "hidden"}`}>
             <img
               className="dropdown-button h-10 w-10 hover:ring-4 user cursor-pointer relative ring-blue-700/30 rounded-full bg-cover bg-center"
               onClick={toggle_dropdown}
@@ -148,9 +152,7 @@ export const AppHeader = () => {
                     </svg>
                   </span>
                   <Form action="/logout" method="post">
-                    <button
-                      type="submit"
-                    >
+                    <button type="submit">
                       <span>Logout</span>
                     </button>
                   </Form>

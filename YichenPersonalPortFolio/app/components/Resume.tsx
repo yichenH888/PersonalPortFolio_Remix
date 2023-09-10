@@ -25,7 +25,11 @@ export const Resume = () => {
             <span className="text-xl">984-281-9668</span>
           </div>
         </div>
-        <button className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
+        <a
+          className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center"
+          download={true}
+          href="/resume/Yichen_Huang_SDE.pdf"
+        >
           <svg
             className="w-4 h-4 mr-2"
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +40,7 @@ export const Resume = () => {
           <br />
           <br />
           <span>Download Resume</span>
-        </button>
+        </a>
       </section>
       {/* /Name Section */}
 
