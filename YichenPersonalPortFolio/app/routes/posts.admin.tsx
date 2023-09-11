@@ -14,7 +14,7 @@ export default function PostAdmin() {
   const { posts } = useLoaderData<typeof loader>();
   return (
     <div className="grid grid-cols-6 gap-6">
-      <>
+      <div className="sm:w-full lg:w-full">
         <link
           rel="stylesheet"
           href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -50,13 +50,13 @@ export default function PostAdmin() {
               {posts.map((post) => (
                 <li key={post.slug}>
                   <a
-                    
+                    href={post.slug}
                     className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
                   >
                     <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400">
                       <i className="bx bx-chat" />
                     </span>
-                    <span className="text-sm font-medium">
+                    <span className="text-sm font-medium overflow-hidden overflow-wrap break-word">
                       <Link to={post.slug}>{post.title}</Link>
                     </span>
                   </a>
@@ -65,7 +65,7 @@ export default function PostAdmin() {
             </ul>
           </div>
         </div>
-      </>
+      </div>
 
       <main className="col-span-4">
         <Outlet />

@@ -2,12 +2,12 @@ export const Resume = () => {
   return (
     <div className="text-gray-800">
       {/* Name section */}
-      <section className="flex flex-col items-center justify-center h-screen  -my-20 md:-mt-48 px-8">
+      <section className="flex flex-col items-center justify-center h-screen  -my-20 md:-mt-35 px-8">
         {/* style="height: 50vh" */}
         <div className="flex flex-col items-center justify-center text-center h-screen-half">
           {/* image */}
           <img
-            className="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
+            className="hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
             src="https://i.ibb.co/Byd813Q/mateus-campos-felipe-Zxd-JFg-SGQBA-unsplash.jpg"
             alt="YichenHuang"
           />

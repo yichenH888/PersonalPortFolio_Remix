@@ -23,6 +23,24 @@ export default function Posts() {
   const { posts, isLoggedin } = useLoaderData<typeof loader>() as LoaderData;
   return (
     <main style={{ minHeight: "80vh" }}>
+      <div className="h-screen flex items-center py-10">
+        <section
+          className="w-full bg-cover bg-center py-32"
+          style={{
+            backgroundImage: 'url("https://source.unsplash.com/random")',
+          }}
+        >
+          <div className="container mx-auto text-center text-white">
+            <h1 className="text-3xl sm:text-5xl font-medium mb-4 sm:mb-6">
+              Welcome to My Technical Blogs
+            </h1>
+            <p className="text-lg sm:text-xl mb-6 sm:mb-12">
+              I use this blog to record what I've learned each day
+            </p>
+          </div>
+        </section>
+      </div>
+
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
         <article>
           <section className="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
@@ -52,6 +70,7 @@ export default function Posts() {
           </span>
         </button>
       </div>
+      <br />
     </main>
   );
 }

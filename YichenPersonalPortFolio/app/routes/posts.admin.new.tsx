@@ -74,6 +74,7 @@ export default function NewPost() {
           className={`${inputClassName} font-mono`}
         />
       </p>
+      <br />
       <p className="text-right">
         <button
           type="submit"
@@ -83,6 +84,7 @@ export default function NewPost() {
           {isCreating ? "Creating..." : "Create Post"}
         </button>
       </p>
+      <br />
     </Form>
   );
 }

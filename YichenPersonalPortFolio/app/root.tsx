@@ -34,7 +34,13 @@ export const loader = async ({ request }: LoaderArgs) => {
 export default function App() {
   const { isLoggedin } = useLoaderData<typeof loader>() as LoaderData;
   return (
-    <html lang="en" className="h-full" style={{ backgroundColor: "#f5f5f5" }}>
+    <html
+      lang="en"
+      className="h-full"
+      style={{
+        backgroundColor: "#f5f5f5",
+      }}
+    >
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -42,7 +48,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <AppHeader isLoggedin={isLoggedin}/>
+        <AppHeader isLoggedin={isLoggedin} />
         <Outlet />
         <AppFooter />
         <ScrollRestoration />
