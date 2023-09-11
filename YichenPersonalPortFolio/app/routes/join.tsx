@@ -81,8 +81,13 @@ export default function Join() {
   }, [actionData]);
 
   return (
-    <div className="flex min-h-full flex-col justify-center">
+    <div className="flex h-4/5 flex-col justify-center">
       <div className="mx-auto w-full max-w-md px-8">
+        <h1 className="text-3xl sm:text-3xl lg:text-3xl flex justify-center">
+          Signup for an account
+        </h1>
+        <br />
+        <br />
         <Form method="post" className="space-y-6">
           <div>
             <label
