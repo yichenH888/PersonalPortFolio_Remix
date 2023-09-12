@@ -4,6 +4,7 @@ import { getPostListings, getPosts } from "~/models/post.server";
 import type { LoaderFunction } from "@remix-run/node";
 import { Blogcard } from "~/components/BlogCard";
 import { getUserId } from "~/session.server";
+import { getUserById } from "~/models/user.server";
 type LoaderData = {
   posts: Awaited<ReturnType<typeof getPostListings>>;
   isLoggedin: boolean;
@@ -11,9 +12,18 @@ type LoaderData = {
 export const loader: LoaderFunction = async ({ request }: LoaderArgs) => {
   //only runs on server
   const userId = await getUserId(request);
+  
+  if (userId !== undefined) {
+    const User = await getUserById(userId);
+    var isLoggedin = User?.email == "yh348@duke.edu" ? true : false;
+  }
+  else{
+    var isLoggedin = false;
+  }
+
   return json<LoaderData>({
     posts: await getPostListings(),
-    isLoggedin: userId == "clmcht3zh00002zyyo26i07d8" ? true : false,
+    isLoggedin: isLoggedin,
   });
 };
 

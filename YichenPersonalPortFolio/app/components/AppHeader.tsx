@@ -77,17 +77,17 @@ export const AppHeader = ({isLoggedin}) => {
           </div>
 
           <li className="font-medium text-lg p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-primary ml-6">
-            <a href="/" className="dark:text-white">
+            <a href="/">
               About
             </a>
           </li>
           <li className="font-medium text-lg p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors ml-6">
-            <a href="/resume" className="dark:text-white">
+            <a href="/resume">
               Resume
             </a>
           </li>
           <li className="font-medium text-lg p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors ml-6">
-            <a href="/posts" className="dark:text-white">
+            <a href="/posts">
               Blog
             </a>
           </li>
@@ -99,7 +99,7 @@ export const AppHeader = ({isLoggedin}) => {
             }`}
             style={{ listStyle: "none" }}
           >
-            <a href="/login" className="dark:text-white">
+            <a href="/login">
               Login
             </a>
           </li>
@@ -109,7 +109,7 @@ export const AppHeader = ({isLoggedin}) => {
             }`}
             style={{ listStyle: "none" }}
           >
-            <a href="/join" className="dark:text-white ml-4">
+            <a href="/join" className="ml-4">
               Signup
             </a>
           </li>

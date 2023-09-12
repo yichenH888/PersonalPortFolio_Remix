@@ -2,11 +2,20 @@ import { json, LoaderArgs, redirect } from "@remix-run/node";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
 
 import { getPosts } from "~/models/post.server";
+import { getUserById } from "~/models/user.server";
 import { getUserId } from "~/session.server";
 
 export const loader = async ({ request }: LoaderArgs) => {
   const userId = await getUserId(request);
-  if (userId != "clmcht3zh00002zyyo26i07d8") return redirect("/login");
+    if (userId !== undefined) {
+      const User = await getUserById(userId);
+      var isLoggedin = User?.email == "yh348@duke.edu" ? true : false;
+    } else {
+      var isLoggedin = false;
+    }
+  if (isLoggedin == false) {
+    return redirect("/login")
+  }
   return json({ posts: await getPosts() });
 };
 
