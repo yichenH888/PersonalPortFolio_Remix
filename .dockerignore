@@ -1,0 +1,12 @@
+# flyctl launch added from YichenPersonalPortFolio/.gitignore
+YichenPersonalPortFolio/**/node_modules
+
+YichenPersonalPortFolio/build
+YichenPersonalPortFolio/public/build
+YichenPersonalPortFolio/**/.env
+
+YichenPersonalPortFolio/cypress/screenshots
+YichenPersonalPortFolio/cypress/videos
+YichenPersonalPortFolio/prisma/data.db
+YichenPersonalPortFolio/prisma/data.db-journal
+fly.toml
